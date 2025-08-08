@@ -5,7 +5,21 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { IndianRupee, ThumbsUp, CalendarDays, PhoneCall } from "lucide-react";
 
-export default function DoctorCard({ doctor }: { doctor: any }) {
+interface Doctor {
+  _id: string;
+  profileImage?: string;
+  name: string;
+  specialization: string;
+  experience: string;
+  location: string;
+  fees: number;
+  isClinic: boolean;
+  batch: string;
+  rating: number;
+  stories: number;
+}
+
+export default function DoctorCard({ doctor }: { doctor: Doctor }) {
   return (
     <Card className="p-6 border border-gray-200 rounded-lg shadow-sm bg-white">
       <div className="flex flex-col lg:flex-row lg:justify-between">
