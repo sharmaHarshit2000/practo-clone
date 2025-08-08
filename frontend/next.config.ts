@@ -1,7 +1,26 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['images.apollo247.in', 'images.jdmagicbox.com', 'img.freepik.com'], 
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.apollo247.in',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.jdmagicbox.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'img.freepik.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
 };
 
