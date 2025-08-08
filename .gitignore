@@ -1,13 +1,14 @@
-# frontend
+# frontend ignores
 frontend/node_modules/
 frontend/.env
 frontend/dist/
-# next.js
 frontend/.next/
 frontend/out/
-# vercel
-frontend/.vercel
+frontend/.vercel/
 
-# backend
+# backend ignores
 backend/node_modules/
 backend/.env
+
+# common
+.DS_Store
